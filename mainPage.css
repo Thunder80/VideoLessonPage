@@ -1,0 +1,368 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	list-style: none;
+}
+
+*:focus{
+	outline: none;
+}
+
+.flexContainer{
+	display: flex;
+}
+
+.sideBar{
+	flex: 80px 0 0;
+	position: relative;
+	text-align: center;
+	border: solid;
+	border-width: 1px;
+	border-color: #eee;
+	text-align: center;
+}
+
+
+.logo, a{
+	color: black;
+	text-decoration: none;
+}
+
+.logo{
+	font-size: 30px;
+	font-weight: bold;
+	height: 8vh;
+	border: solid;
+	border-width: 0px 1px 2px 0px;
+	border-color: #eee;
+}
+
+.sideBarTop{
+	margin-top: 25px;
+}
+
+.sideBarBottom{
+	position: absolute;
+	margin-left: 20px;
+	bottom: 10px;
+}
+
+.sideBarItem{
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
+.videoChat{
+	width: 100%;
+	background-color: #F5F6F8;
+	border: solid;
+	border-width: 1px;
+	border-color: #eee;
+}
+.videoChatTop{
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	background-color: white;
+	font-size: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.videoChatTopTime{
+	margin: 15px 0px;
+	margin-right: 20px;
+	font-size: 9px;
+	height: 25px;
+	color: white;
+}
+
+.time{
+	background-color: black;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.lesson{
+	background-color: tomato;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.videoChatTopTime h2{
+	padding: 5px 15px;
+	font-weight: 600;
+}
+
+
+.videoPlayer{
+	width: 100%;
+	height: 80vh;
+	background-image: url("../pic.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	background-color: red;
+}
+
+.videoCallButton, .awardButton, .endCallButton{
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	background-color: white;
+}
+
+.awardButton{
+	left: 80px;
+}
+
+.endCallButton{
+	left: 130px;
+	background-color: red;
+}
+
+.lessonMarks{
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	padding: 8px 4px;
+	background-color: white;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+.gradeButton{
+	background-color: #5DAFE4;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: none;
+	color: white;
+}
+
+.videoChatBottom{
+	height: 34vh;
+	margin: 25px 0px;
+	padding: 10px 20px;
+}
+
+.vcbButtons{
+	margin-bottom: 20px;
+}
+
+.videoChatBottom h1{
+	font-size: 24px;
+	padding: 10px;
+}
+
+.videoChatBottomButton{
+	display: inline-block;
+	border: none;
+	border-radius: 50px;
+	font-weight: bold;
+	width: 120px;
+	height: 35px;
+	margin: 10px 5px 5px 5px;
+	cursor: pointer;
+}
+
+.videoChatBottomButton:hover{
+	background-color: #434B56;
+	color: white;
+}
+
+.cardContainer{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.cardArrowButtons{
+	margin-top: 30px;
+}
+
+.cardArrowButton{
+	border: none;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.cardArrowButtons i{
+	color: #5DAFE4;
+	font-size: 20px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.card{
+	background-color: white;
+	width: 28%;
+	height: 150px;
+	border-radius: 5px;
+	padding: 10px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.card h2{
+	margin-bottom: 20px;
+}
+
+.card a{
+	display: block;
+	margin: 10px;
+	font-size: 16px;
+}
+
+.card1Button{
+	border: none;
+	border-radius: 100px;
+	width: 140px;
+	height: 35px;
+	color: white;
+	background-color: #5DAFE4;
+	font-weight: bold;
+}
+
+.card1Button:hover{
+	background-color: #009bba;
+}
+
+.chatTopArea{
+	width: 100%;
+	height: 8vh;
+	font-size: 10px; 
+}
+
+
+.textChat{
+	width: 40%;
+	border: solid;
+	border-width: 1px;
+	border-color: #eee;
+}
+
+.chatArea{
+	background-color: #F5F6F8;
+	height: 119vh;
+	overflow-y: scroll;
+}
+
+.otherMessageBlock{
+	display: flex;
+}
+
+.sender{
+	flex: 0 0 35px;
+	height: 35px;
+	font-size: 6px;
+	color: white;
+	border-radius: 50%;
+	background-color: tomato;
+	text-align: center;
+	margin: 30px 5px 0px 5px;
+}
+
+.sender h1{
+	margin-top: 10px;
+}
+
+.message{
+	background-color: white;
+	font-size: 6px;
+	padding: 20px 30px 30px 30px;
+	border-radius: 5px;
+	margin: 40px 15px 10px 15px;
+	width: 100%;
+	min-height: 180px;
+	position: relative;
+}
+
+.message h1{
+	margin-bottom: 10px;
+}
+
+.message p{
+	font-size: 12px;
+	margin: 10px 0px;
+}
+
+.message button{
+	font-size: 12px;
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 50%;
+	border: none;
+	text-align: center;
+}
+
+.message i{
+	font-size: 40px;
+	color: #5DAFE4;
+	display: block;
+}
+
+.sendFlashButton{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 9px;
+	text-align: center;
+}
+
+
+.typeArea{
+	height: 7vh;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.typeArea input{
+	height: 100%;
+	width: 80%;
+	padding: 10px;
+	border: none;
+}
+
+.sendMessageButton{
+	border: none;
+	width: 40px;
+	height: 40px;
+	background-color: #5DAFE4;
+	color: white;
+	margin-top: 5px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.sendMessageButton:hover{
+	background-color: #009bba;
+}
+
+.icon, .iconLink{
+	color: #ccc;
+}
+
+.icon:hover{
+	color: black;
+}
+
+.sideBarItem:hover > .iconLink, .sideBarItem:hover > .iconLink > .icon{
+	color: black;
+}
+
